@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best mom ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff6b81,#ff9ff3);
+    overflow:hidden;
+}
+
+.container{
+    background:white;
+    width:90%;
+    max-width:420px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    color:#ff4d6d;
+    margin-bottom:10px;
+}
+
+p{
+    margin:10px 0;
+    color:#444;
+    line-height:1.6;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d6d;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#surprise{
+    display:none;
+    margin-top:20px;
+    animation:fade 1s;
+}
+
+.qr{
+    width:220px;
+    margin-top:15px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>👨‍👦 Best Mom ❤️</h1>
+
+<p>Hi Mumma! I made this special surprise just for you.</p>
+
+<button onclick="showSurprise()">🎁 Open Surprise</button>
+
+<div id="surprise">
+
+<h2>❤️ Dear Papa ❤️</h2>
+
+<p>
+Thank you for always supporting me.<br><br>
+
+I'm sorry I couldn't give you a gift on Mother's Day.<br><br>
+
+I made this small app with all my love.<br><br>
+
+One day I will become a successful developer and make you proud.<br><br>
+
+<b>I Love You Mumma ❤️</b><br><br>
+
+— Your Son,<br>
+Sanidhya
+</p>
+
+<h3>📱 Scan This QR Code</h3>
+
+<img src="qrcode.png" class="qr" alt="QR Code">
+
+<p>Scan it for another surprise! 🎉</p>
+
+</div>
+
+</div>
+
+<script>
+function showSurprise(){
+    document.getElementById("surprise").style.display="block";
+}
+</script>
+
+</body>
+</html>
